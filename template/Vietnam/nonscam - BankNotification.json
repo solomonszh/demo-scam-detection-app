@@ -1,0 +1,11 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "[Vietcombank] Số dư TK 0012345678: +2.529.285 VND. Số dư hiện tại: 17.116.207 VND. GD: Nap tien dien thoai"
+      }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "sender": "+63 964 960 6258",
+    "receiver_country": "Singapore",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "unknown",
+        "message": "Singapore Post Remindaer :\nDear customer, your parcel has arrived at our warehouse but cannot be delivered due to incomplete address information. Please confirm and modify your address via the link followed:\nhttps://is.gd/mMmOqo?mUGW=nZE50D\nSingapore Post wishes you a wonderful day!"
+      }
+    ]
+}

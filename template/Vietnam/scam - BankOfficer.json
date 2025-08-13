@@ -1,0 +1,21 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:04:03.227698Z",
+        "message": "Ngân hàgn ABC tôhng báo bạn có giao dịcc hkhông xác địwh. Vui lòng xác mihn tại https://secure-pay.vn/verify"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "2025-08-12T00:06:03.227698Z",
+        "message": "lôi không thực hiện giao dịch ó, tôôi làm sao 3ác mminh??"
+      },
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:08:03.227698Z",
+        "message": "Bạn vui lòng đăng nhập treo link này: httpps://secure-pay.vn/verify để xác minhh nhé."
+      }
+    ]
+}

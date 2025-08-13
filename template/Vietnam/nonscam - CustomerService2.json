@@ -1,0 +1,26 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "receiver",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "Chào anh/chị, tôi cần hỗ trợ về đơn hàng"
+      },
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:06:03.232389Z",
+        "message": "Xin chào, anh/chị vui lòng cung cấp mã đơn hàng để tôi kiểm tra"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "2025-08-12T00:07:03.232389Z",
+        "message": "Mã đơn hàng là 123456"
+      },
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:06:03.232389Z",
+        "message": "Đơn hàng của anh/chị đang được giao, dự kiến đến ngày mai"
+      }
+    ]
+}

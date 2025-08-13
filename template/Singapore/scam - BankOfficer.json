@@ -1,0 +1,56 @@
+{
+    "sender": "Aaron",
+    "receiver_country": "Singapore",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "8:36 pm",
+        "message": "I am Aaron here,from POSB Bank officer"
+      },
+      {
+        "role": "sender",
+        "timestamp": "8:36 pm",
+        "message": "ScamShield (7).apk (6.2 MB) . APK"
+      },
+      {
+        "role": "sender",
+        "timestamp": "8:37 pm",
+        "message": "This is forward from Government side"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "8:42 pm",
+        "message": "Ok"
+      },
+      {
+        "role": "sender",
+        "timestamp": "8:43 pm",
+        "message": "Because the ScamShield should be help you to waived all scam apps scam call and scam message\nThat's why must follow step"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "8:43 pm",
+        "message": "Ok"
+      },
+      {
+        "role": "sender",
+        "timestamp": "8:43 pm",
+        "message": "Later once you done download"
+      },
+      {
+        "role": "sender",
+        "timestamp": "8:43 pm",
+        "message": "Must make a scam report"
+      },
+      {
+        "role": "sender",
+        "timestamp": "8:43 pm",
+        "message": "Inside ScamShield can do it"
+      },
+      {
+        "role": "sender",
+        "timestamp": "unknown",
+        "message": "Because we worry scammers got technology to delete our ScamShield..."
+      }
+    ]
+}

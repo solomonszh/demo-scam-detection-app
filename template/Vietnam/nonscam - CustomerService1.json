@@ -1,0 +1,16 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "receiver",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "Kính gửi sinh vêin, hạn đórg học phí học kkỳ 1 là ngàyy 12/08/2025."
+      },
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:06:03.232389Z",
+        "message": "Cảm ơn thông báo, tôi sẽ thanh toán đúng hạn."
+      }
+    ]
+}

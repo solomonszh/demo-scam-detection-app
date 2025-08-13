@@ -1,0 +1,16 @@
+{
+    "sender": "flashexpres",
+    "receiver_country": "Thailand",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "7 Feb 2566 BE at 11:16",
+        "message": "พัสดุTH02013S3GBC6Cของคุณได้รับแจ้งยืนยันการส่งปลายทาง หากมีข้อสงสัยกรุณาคลิกลิงก์เพื่อร้องเรียน https://fle.pub/poCC34"
+      },
+      {
+        "role": "sender",
+        "timestamp": "30 Mar 2566 BE at 21:18",
+        "message": "พัสดุTH02013YQ5CP6Cของคุณได้รับแจ้งยืนยันการส่งปลายทาง หากมีข้อสงสัยกรุณาคลิกลิงก์เพื่อร้องเรียน https://fle.pub/oPCUuM"
+      }
+    ]
+}

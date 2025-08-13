@@ -1,0 +1,31 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "Chào bạn, chúng tôi có khoản vay nhanh lãi suất thấp. Bạn có muốn đăng ký không?"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "2025-08-12T00:06:03.232389Z",
+        "message": "Tôi muốn biết thêm chi tiết"
+      },
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "Vui lòng cung cấp số điện thoại và CMND để tiến hành xét duyệt"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "2025-08-12T00:06:03.232389Z",
+        "message": "Tôi không muốn gửi thông tin cá nhân qua đây"
+      },
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "Bạn nên cung cấp để được xét duyệt nhanh chóng"
+      }
+    ]
+}

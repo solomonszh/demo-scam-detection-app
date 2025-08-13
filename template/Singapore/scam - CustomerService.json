@@ -1,0 +1,26 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Singapore",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "09:09",
+        "message": "Download our company's mobile app now to place your order. As a new customer, you can claim a reward of free $20 now!"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "09:09",
+        "message": "Oh wow, thanks! How do I claim the reward?"
+      },
+      {
+        "role": "sender",
+        "timestamp": "09:09",
+        "message": "Just provide your phone number and you will receive a 6-digit OTP. Just let me know the OTP and I will send the reward 🙂"
+      },
+      {
+        "role": "receiver",
+        "timestamp": "09:10",
+        "message": "Thanks for the great deal!"
+      }
+    ]
+}

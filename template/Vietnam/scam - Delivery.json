@@ -1,0 +1,11 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "[Giao hàng] Đơn hàng #911717 của bạn đang chờ xác nhận. Cập nhật địa chỉ nhận hàng: https://ghn.vn/login"
+      }
+    ]
+}

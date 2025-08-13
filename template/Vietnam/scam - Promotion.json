@@ -1,0 +1,11 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "Chúc mừng! Bạn trúng thưởng voucher 1.000.000 VNĐ. Nhấn https://tpbank.vn/login để nhận"
+      }
+    ]
+}

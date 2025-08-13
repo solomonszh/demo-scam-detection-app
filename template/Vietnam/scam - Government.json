@@ -1,0 +1,11 @@
+{
+    "sender": "unknown",
+    "receiver_country": "Vietnam",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "2025-08-12T00:05:03.232389Z",
+        "message": "[Cơ quan thuế] Bạn còn nợ thuế 10.544.207 VND. Nộp ngay tại https://ghn.vn/login để tránh phạt"
+      }
+    ]
+}
