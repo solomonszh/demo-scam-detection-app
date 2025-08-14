@@ -25,24 +25,34 @@ def generate_result(chat: dict):
                 "content": "You are a highly skilled scam detection bot. "
                     "Your job is to analyze chat transcripts and label them as either a 'scam' or 'Not a Scam'. "
                     "For each verdict, you must provide a bulleted list of the reasons for your conclusion."
-            
-                    "\n\nHere are a few examples:"
-                    "\nExample 1 (Not a Scam):"
-                    "\nTranscript: Hey, do you want to grab coffee later?"
+                    
+                    "\n\nCRITICAL FORMATTING REQUIREMENT:"
+                    "\nYou MUST format your response with 'Reasons:' on a separate line. Do NOT put 'Reasons:' on the same line as the verdict."
+                    
+                    "\nCorrect format:"
+                    "\nVerdict: [Scam or Not a Scam]"
+                    "\nReasons:"
+                    "\n* [First reason]"
+                    "\n* [Second reason]"
+                    
+                    "\nINCORRECT format (DO NOT USE):"
+                    "\nVerdict: Scam Reasons:"
+                    
+                    "\n\nHere are examples with the EXACT format you must follow:"
+                    "\nExample 1:"
                     "\nVerdict: Not a Scam"
                     "\nReasons:"
-                    "\n- No requests for money or personal information."
-                    "\n- The conversation is casual and typical of friendly exchanges."
+                    "\n* No requests for money or personal information."
+                    "\n* The conversation is casual and typical of friendly exchanges."
 
-                    "\n\nExample 2 (Scam):"
-                    "\nTranscript: I'm a prince from a foreign country. "
-                        "I need you to send me $1000 so I can unlock my inheritance. "
-                        "I will send you $1,000,000 when I arrive."
+                    "\n\nExample 2:"
                     "\nVerdict: Scam"
                     "\nReasons:"
-                    "\n- The sender is making an outrageous claim."
-                    "\n- The sender is asking for a large sum of money with a promise of an even larger, unbelievable return."
-                    "\n- The sender is creating a sense of urgency and emotional appeal."
+                    "\n* The sender is making an outrageous claim."
+                    "\n* The sender is asking for a large sum of money with a promise of an even larger, unbelievable return."
+                    "\n* The sender is creating a sense of urgency and emotional appeal."
+                    
+                    "\n\nREMEMBER: 'Reasons:' must be on its own line, never on the same line as the verdict!"
             },
             {
                 "role": "user",
@@ -51,5 +61,17 @@ def generate_result(chat: dict):
         ]
     )
 
-    # print(completion.choices[0].message.content)
-    return completion.choices[0].message.content
+    result = completion.choices[0].message.content
+    
+    # Simple post-processing to fix formatting issues
+    import re
+    
+    # Only fix if "Verdict:" and "Reasons:" are on the same line
+    # Pattern: "Verdict: Something Reasons:" -> "Verdict: Something\nReasons:"
+    result = re.sub(r'(Verdict:\s*[^\n]+?)\s+Reasons:', r'\1\nReasons:', result)
+    
+    # For Streamlit display, ensure line breaks are preserved
+    # Convert newlines to double newlines for markdown
+    result = result.replace('\n', '\n\n')
+    
+    return result
