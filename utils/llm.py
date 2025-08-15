@@ -15,7 +15,8 @@ def generate_result(chat: dict, country: str, sea_lion_api_key: str) -> str:
     )
     completion = client.chat.completions.create(
         model="aisingapore/Llama-SEA-LION-v3-70B-IT",
-        messages=prompt_country
+        messages=prompt_country,
+        temperature=0,
     )
 
     result = completion.choices[0].message.content
