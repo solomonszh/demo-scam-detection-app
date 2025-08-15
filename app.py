@@ -54,8 +54,9 @@ elif template == "Blank":
     if 'chat_num' not in st.session_state:
         st.session_state.chat_num = 1
     
+    receiver_country = country.split(" - ")[0]
     chat = {
-        "receiver_country": country.split(" - ")[0], 
+        "receiver_country": receiver_country, 
         "sender": None,
         "chat_history": []
     }
@@ -127,7 +128,7 @@ elif template == "Blank":
         import time
         with st.spinner("Processing..."):
             time.sleep(2)
-            result = generate_result(chat=chat)
+            result = generate_result(chat=chat, country=receiver_country)
 
         st.subheader("Scam Detection Result", divider="blue")
         st.markdown(result)
@@ -136,6 +137,8 @@ elif template == "Blank":
 else:
     st.title(f"Scam Detection App Demo for {country} 🚨")
     st.markdown(f"**Template:** {template}")
+
+    receiver_country = country.split(" - ")[0]
 
     with open(os.path.join(template_path, f"{template}.json"), "r") as f:
         template_chat = json.load(f)
@@ -167,7 +170,7 @@ else:
     if submit:
         with st.spinner("Processing..."):
             time.sleep(2)
-            result = generate_result(chat=template_chat)
+            result = generate_result(chat=template_chat, country=receiver_country)
 
         st.subheader("Scam Detection Result", divider="blue")
         st.markdown(result)
