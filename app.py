@@ -130,7 +130,7 @@ elif template == "Blank":
             result = generate_result(chat=chat)
 
         st.subheader("Scam Detection Result", divider="blue")
-        st.write(result)
+        st.markdown(result)
 
 # If a specific template is selected
 else:
@@ -170,4 +170,4 @@ else:
             result = generate_result(chat=template_chat)
 
         st.subheader("Scam Detection Result", divider="blue")
-        st.write(result)
+        st.markdown(result)
