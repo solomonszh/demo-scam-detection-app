@@ -1,11 +1,19 @@
 import os
 import json
 import time
+
+import openai
 import streamlit as st
 
 from utils.llm import generate_result
 
 with st.sidebar:
+    sea_lion_api_key = st.text_input("Enter your SEA LION API key", type="password")
+    st.markdown(
+        "Visit <a href='https://sea-lion.ai/'>here</a> to get your API key</p>", 
+        unsafe_allow_html=True,
+    )
+
     country = st.selectbox(
         "Choose the country", 
         [
@@ -125,13 +133,21 @@ elif template == "Blank":
         )
 
     if submit:
-        import time
-        with st.spinner("Processing..."):
-            time.sleep(2)
-            result = generate_result(chat=chat, country=receiver_country)
+        try:
+            with st.spinner("Processing..."):
+                time.sleep(2)
 
-        st.subheader("Scam Detection Result", divider="blue")
-        st.markdown(result)
+                result = generate_result(
+                    chat=chat, 
+                    country=receiver_country, 
+                    sea_lion_api_key=sea_lion_api_key,
+                )
+
+            st.subheader("Scam Detection Result", divider="blue")
+            st.markdown(result)
+        
+        except openai.AuthenticationError:
+            st.error("Error! Please check your SEA LION API key", icon="🚨")
 
 # If a specific template is selected
 else:
@@ -168,9 +184,18 @@ else:
         submit = st.button("Submit", type="primary")
 
     if submit:
-        with st.spinner("Processing..."):
-            time.sleep(2)
-            result = generate_result(chat=template_chat, country=receiver_country)
+        try:
+            with st.spinner("Processing..."):
+                time.sleep(2)
+                result = generate_result(
+                        chat=template_chat, 
+                        country=receiver_country, 
+                        sea_lion_api_key=sea_lion_api_key,
+                    )
 
-        st.subheader("Scam Detection Result", divider="blue")
-        st.markdown(result)
+            st.subheader("Scam Detection Result", divider="blue")
+            st.markdown(result)
+
+        except openai.AuthenticationError:
+            st.error("Error! Please check your SEA LION API key", icon="🚨")
+        

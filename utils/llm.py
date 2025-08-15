@@ -6,14 +6,13 @@ from utils.prompt import get_prompt_by_country
 # Load environment variables from .env file
 load_dotenv()
 
-SEA_LION_API_KEY = os.getenv("SEA_LION_API_KEY", None)
-client = OpenAI(
-    api_key=SEA_LION_API_KEY,
-    base_url="https://api.sea-lion.ai/v1",
-)
-
-def generate_result(chat: dict, country: str) -> str:
+def generate_result(chat: dict, country: str, sea_lion_api_key: str) -> str:
     prompt_country = get_prompt_by_country(chat=chat, country=country)
+
+    client = OpenAI(
+        api_key=sea_lion_api_key,
+        base_url="https://api.sea-lion.ai/v1",
+    )
     completion = client.chat.completions.create(
         model="aisingapore/Llama-SEA-LION-v3-70B-IT",
         messages=prompt_country
