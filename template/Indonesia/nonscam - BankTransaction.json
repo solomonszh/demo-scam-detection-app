@@ -1,0 +1,11 @@
+{
+    "sender": "BNI",
+    "receiver_country": "Indonesia",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "16 Agu 2025 at 12:30",
+        "message": "Info: Trx debet Rp250.000,00 dari Rek. 008XXXXX, pada 16/08/25 Pukul 12:30. Saldo saat ini Rp1.500.000,00. Terimakasih."
+      }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "sender": "BCA",
+    "receiver_country": "Indonesia",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "Sat, 31 Aug at 01.12",
+        "message": "BCA: HATI-HATI PENIPUAN! JANGAN BERIKAN KODE OTP ke siapapun. Kode OTP transaksi anda 5xxx di Tokopedia.com IDR 830.752,00 berlaku 5 mnt.1/3"
+      },
+      {
+        "role": "sender",
+        "timestamp": "Sat, 25 Jan at 09.15",
+        "message": "Potongan Rp188 ribu, min. transaksi Rp1 juta di Ocean 8 dgn Kartu Kredit BCA Card Platinum & BCA Mastercard World, 28 - 29 Jan 2025.Info 1500888 #HokinyaMenular"
+      },
+      {
+        "role": "sender",
+        "timestamp": "Yesterday 17.31",
+        "message": "Pelanggan yang terhormat:\nBCA mengingatkan Anda bahwa rekening poin Anda saat ini(12.250 poin)akan habis masa berlakunya dalam tiga hari kerja. Harap segera tukarkan poin Anda: https://bca-co.cyou/idn"
+      }
+    ]
+}

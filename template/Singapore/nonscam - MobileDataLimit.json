@@ -1,0 +1,11 @@
+{
+    "sender": "Singtel",
+    "receiver_country": "Singapore",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "20 Mar 2025 at 10:15",
+        "message": "Dear customer, your mobile data has reached 80% of your plan's limit. You may continue to use data at a reduced speed or purchase a data add-on. For details, please visit singtel.com/data"
+      }
+    ]
+  }

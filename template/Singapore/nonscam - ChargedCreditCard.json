@@ -1,0 +1,11 @@
+{
+    "sender": "DBS",
+    "receiver_country": "Singapore",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "16 Aug 2025 at 11:45",
+        "message": "DBS: S$25.50 charged to your credit card ending in 7890 at NTUC FairPrice on 16 Aug. T & C applies."
+      }
+    ]
+}

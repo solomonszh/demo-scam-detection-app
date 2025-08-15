@@ -1,0 +1,11 @@
+{
+    "sender": "PT.InfoHadiah",
+    "receiver_country": "Indonesia",
+    "chat_history": [
+      {
+        "role": "sender",
+        "timestamp": "unknown",
+        "message": "Selamat! Anda terpilih sebagai pemenang kejutan tahunan dari PT. XXXXXX. Anda memenangkan hadiah senilai Rp25.000.000! Untuk verifikasi dan klaim hadiah, silakan kunjungi link berikut:\n\nhttps://info-hadiah.my.id/verifikasi"
+      }
+    ]
+}
