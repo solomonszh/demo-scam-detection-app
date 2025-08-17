@@ -55,6 +55,9 @@ if country == "None":
     st.write("Please select a country from the sidebar to proceed.")
     st.write("This app will help you detect scams based on the selected country's context.")
 
+    st.write("The video shows how to use the website.")
+    st.video("https://youtu.be/WQ_VvtdsSE8")
+
 # If the user selects "Blank" template, allow them to create a new dialogue
 elif template == "Blank":
     st.title(f"Scam Detection App Demo for {country} 🚨")
